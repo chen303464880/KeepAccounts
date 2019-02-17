@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="@drawable/shape_bottom_e7_line"
+    android:orientation="vertical"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp">
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size15" />
+
+    <com.cjj.keepaccounts.view.ContrastView
+        android:id="@+id/contrast_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:clickable="false"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:divider="@drawable/shape_vertical_e7_line"
+        android:dividerPadding="18dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_average"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+
+
+</LinearLayout>

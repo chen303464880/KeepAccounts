@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iv_select_color"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:gravity="center"
+    android:scaleType="center"
+    android:src="@mipmap/icon_account_color_gou"
+    tools:ignore="ContentDescription">
+</ImageView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:paddingStart="@dimen/start"
+        android:paddingEnd="@dimen/end">
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/have_no_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size29" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignTop="@+id/tv_balance"
+            android:layout_toEndOf="@+id/tv_balance"
+            android:contentDescription="@null"
+            android:src="@mipmap/books_bi_icon" />
+
+        <TextView
+            android:id="@+id/tv_balance_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_balance"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.8"
+            android:text="@string/account_balance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size12" />
+
+        <RelativeLayout
+            android:id="@+id/rl_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size20" />
+
+            <TextView
+                android:id="@+id/tv_year_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_year"
+                android:text="@string/year"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignTop="@+id/tv_year_hint"
+                android:layout_toEndOf="@+id/tv_year_hint"
+                android:contentDescription="@null"
+                android:src="@mipmap/sanjiaojiantou_xia_bai" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_expenditure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:text="@string/have_no_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size18" />
+
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="6dp"
+            android:text="@string/have_no_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size18"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_details_kong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableTop="@mipmap/account_records_detail_kong"
+        android:drawablePadding="15dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:text="@string/details_kong"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size16"
+        android:visibility="visible" />
+
+</LinearLayout>

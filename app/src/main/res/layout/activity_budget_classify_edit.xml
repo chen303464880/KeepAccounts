@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_divider_horizontal_line_e4e5e4"
+    android:orientation="vertical"
+    android:showDividers="beginning|middle|end"
+    tools:context=".activity.bill.budget.BudgetClassifyEditActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/divider_color_f4f6f4" />
+
+    <FrameLayout
+        android:id="@+id/fl_type_name"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/type_name" />
+
+        <TextView
+            android:id="@+id/tv_type_name"
+            style="@style/add_account_item_value_style"
+            android:drawableEnd="@mipmap/youjiantou_zhanwei" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_money"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/month_budget_money" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/add_account_item_value_style"
+            android:textColor="@color/AppThemeColor" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_add_child"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/add_budget_child_classify" />
+
+        <TextView style="@style/add_account_item_value_style" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_budget_child"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_color_f2" />
+
+</LinearLayout>

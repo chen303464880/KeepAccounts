@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_residual_budget" type="id" />
+    <item name="tv_budget_desc" type="id" />
+    <item name="process" type="id" />
+    <item name="tv_budget" type="id" />
+    <item name="offset" type="id" />
+    <item name="value_update_animator" type="id" />
+    <item name="value_animator" type="id" />
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.cjj.keepaccounts.utils.TimeUtils" />
+
+        <variable
+            name="isBorrow"
+            type="boolean" />
+
+        <variable
+            name="borrowAccount"
+            type="com.cjj.keepaccounts.bean.Account" />
+
+        <variable
+            name="credit"
+            type="com.cjj.keepaccounts.bean.Credit" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/shape_divider_horizontal_line_e4e5e4"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end"
+        tools:context=".activity.account.AddBorrowMoneyActivity">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/divider_color_f4f6f4" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_name"
+            style="@style/add_account_item_layout_style">
+
+            <TextView
+                android:id="@+id/tv_name_desc"
+                style="@style/add_account_item_name_style"
+                android:text="@string/his_name" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/add_account_item_value_style"
+                android:text="@{credit.dcUName}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_money"
+            style="@style/add_account_item_layout_style">
+
+            <TextView
+                android:id="@+id/tv_money_desc"
+                style="@style/add_account_item_name_style"
+                android:text="@{isBorrow?@string/loans_money:@string/borrow_money}"
+                tools:text="@string/loans_money" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/add_account_item_value_style"
+                android:text="@{@string/format_money(credit.money)}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_account"
+            style="@style/add_account_item_layout_style">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/use_account" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                style="@style/add_account_item_value_style"
+                android:text="@{borrowAccount.name}" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/divider_color_f4f6f4" />
+
+        <FrameLayout
+            android:id="@+id/fl_time"
+            style="@style/add_account_item_layout_style">
+
+            <TextView
+                android:id="@+id/tv_time_desc"
+                style="@style/add_account_item_name_style"
+                android:text="@{isBorrow?@string/borrow_money_out_time:@string/borrow_money_in_time}"
+                tools:text="@string/borrow_money_out_time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/add_account_item_value_style"
+                android:text="@{credit.MTime==0?@string/null_str:TimeUtils.longTurnTime(credit.MTime,@string/yyyy_MM_dd_format)}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_expire_time"
+            style="@style/add_account_item_layout_style">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/repayment_time" />
+
+            <TextView
+                android:id="@+id/tv_expire_time"
+                style="@style/add_account_item_value_style"
+                android:text="@{credit.settlementTime==0?@string/null_str:TimeUtils.longTurnTime(credit.settlementTime * 1000,@string/yyyy_MM_dd_format)}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            style="@style/add_account_item_layout_style">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/remarks" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/add_account_item_value_style"
+                android:drawablePadding="5dp"
+                android:text="@{credit.content}" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/divider_color_f4f6f4" />
+    </LinearLayout>
+</layout>

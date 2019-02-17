@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_horizontal_e7_line"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_color_fb"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/start"
+        android:paddingEnd="@dimen/end">
+
+        <TextView
+            android:id="@+id/tv_type_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/start"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|end"
+            android:maxLines="2"
+            android:text="@string/have_no_money"
+            android:textColor="@color/text_color_a39f9f"
+            android:textSize="@dimen/text_size30" />
+    </LinearLayout>
+
+
+    <com.cjj.keepaccounts.view.SpringBackLayout
+        android:id="@+id/sbv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_color_ebeceb">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_new_bill_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.cjj.keepaccounts.view.SpringBackLayout>
+</LinearLayout>

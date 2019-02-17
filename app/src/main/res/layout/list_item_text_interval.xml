@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.cjj.keepaccounts.utils.TimeUtils" />
+
+        <variable
+            name="time"
+            type="Long" />
+    </data>
+
+    <TextView
+        android:id="@+id/tv_interval"
+        format="@{@string/yyyy_MM_dd_format}"
+        longTime="@{time}"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/divider_color_f4f6f4"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/start"
+        android:paddingEnd="@dimen/end"
+        android:textColor="@color/text_color_9e9b9b"
+        android:textSize="@dimen/text_size12" />
+</layout>

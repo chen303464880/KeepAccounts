@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_color_f4f6f4"
+    android:divider="@drawable/shape_divider_horizontal_line_e4e5e4"
+    android:orientation="vertical"
+    android:showDividers="beginning|middle|end"
+    tools:context=".activity.account.ReceiptBorrowMoneyActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/divider_color_f4f6f4" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_money"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            android:id="@+id/tv_money_desc"
+            style="@style/add_account_item_name_style"
+            android:text="@string/money" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/add_account_item_value_style" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_interest"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            android:id="@+id/tv_interest_desc"
+            style="@style/add_account_item_name_style"
+            android:text="@string/interest_in" />
+
+        <TextView
+            android:id="@+id/tv_interest"
+            style="@style/add_account_item_value_style" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/divider_color_f4f6f4" />
+
+    <FrameLayout
+        android:id="@+id/fl_account"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/use_account" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            style="@style/add_account_item_value_style" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/divider_color_f4f6f4" />
+
+    <FrameLayout
+        android:id="@+id/fl_time"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/time" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/add_account_item_value_style" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/remarks" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/add_account_item_value_style"
+            android:drawablePadding="5dp" />
+    </FrameLayout>
+</LinearLayout>

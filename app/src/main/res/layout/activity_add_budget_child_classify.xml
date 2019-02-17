@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_divider_vertical_line_e4e5e4"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_budget"
+        android:layout_width="105dp"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_f3" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_budget_child"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/bg_color_fa" />
+
+
+</LinearLayout>

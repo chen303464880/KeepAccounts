@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.cjj.keepaccounts.utils.Utils" />
+
+        <variable
+            name="record"
+            type="com.cjj.keepaccounts.bean.Record" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_fb"
+        android:orientation="vertical"
+        tools:context=".activity.account.BillDetailsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/start"
+            android:paddingEnd="@dimen/end">
+
+            <TextView
+                android:id="@+id/tv_type"
+                logoImgId="@{record.recordType.imgSrcId}"
+                logoImgSize="@{Utils.dip2px(25)}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:text="@{record.recordType.typeDesc}"
+                android:textColor="@color/text_color_655f5f"
+                android:textSize="@dimen/text_size19" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@{@string/format_money(Utils.abs(record.rateMoney))}"
+                android:textColor="@color/AppThemeColor"
+                android:textSize="@dimen/text_size18" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/shape_divider_horizontal_line_e4e5e4" />
+
+        <FrameLayout style="@style/bill_details_fl_content">
+
+            <TextView
+                style="@style/key_style"
+                android:text="@string/account_book" />
+
+            <TextView
+                android:id="@+id/tv_account_book"
+                style="@style/value_style"
+                android:text="@string/default_account_book" />
+        </FrameLayout>
+
+        <FrameLayout style="@style/bill_details_fl_content">
+
+            <TextView
+                style="@style/key_style"
+                android:text="@string/time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/value_style"
+                android:text="@{@string/yyyy_MM_dd(record.year,record.month+1,record.day)}" />
+        </FrameLayout>
+
+        <FrameLayout style="@style/bill_details_fl_content">
+
+            <TextView
+                android:id="@+id/tv_account_name_hint"
+                style="@style/key_style"
+                android:text="@string/account" />
+
+            <TextView
+                android:id="@+id/tv_account_name"
+                style="@style/value_style" />
+        </FrameLayout>
+
+        <FrameLayout style="@style/bill_details_fl_content">
+
+            <TextView
+                android:id="@+id/tv_member_key"
+                style="@style/key_style"
+                android:text="@string/member" />
+
+            <TextView
+                android:id="@+id/tv_member"
+                style="@style/value_style"
+                android:text="@string/no_member" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_divider_horizontal_line_e4e5e4" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/start"
+            android:paddingTop="25dp"
+            android:paddingEnd="@dimen/end"
+            android:paddingBottom="25dp"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+
+            android:background="@drawable/shape_divider_horizontal_line_e4e5e4" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/AppThemeColor"
+            android:textSize="@dimen/text_size20" />
+
+    </LinearLayout>
+</layout>

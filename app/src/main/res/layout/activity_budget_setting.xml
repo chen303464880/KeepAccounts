@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:divider="@drawable/shape_divider_horizontal_line_e4e5e4"
+    android:orientation="vertical"
+    android:showDividers="beginning|middle|end">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@color/divider_color_f4f6f4" />
+
+    <FrameLayout style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/open_budget" />
+
+        <Switch
+            android:id="@+id/sw_open_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:thumb="@drawable/shape_switch_thumb"
+            android:track="@drawable/selector_switch_background" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_money_budget"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/month_budget" />
+
+        <TextView
+            android:id="@+id/tv_money_budget"
+            style="@style/add_account_item_value_style" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_budget_mode"
+        style="@style/add_account_item_layout_style">
+
+        <TextView
+            style="@style/add_account_item_name_style"
+            android:text="@string/budget_mode" />
+
+        <TextView
+            android:id="@+id/tv_budget_mode"
+            style="@style/add_account_item_value_style"
+            android:text="@string/month_budget" />
+    </FrameLayout>
+
+</LinearLayout>

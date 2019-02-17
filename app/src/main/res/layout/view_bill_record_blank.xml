@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_bill_record_blank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:drawableBottom="@mipmap/records_line_jiantou"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="15dp"
+    android:text="创建你的第一笔帐吧"
+    android:textColor="@color/text_color_a39f9f"
+    android:textSize="@dimen/text_size15">
+
+</TextView>

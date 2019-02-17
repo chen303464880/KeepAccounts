@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/divider_color_dfdfde">
+    <item android:drawable="@color/divider_color_f4f6f4" />
+</ripple>

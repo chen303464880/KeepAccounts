@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/property_height"
+    android:background="@drawable/shape_property_head_footer_bg"
+    android:paddingStart="@dimen/start"
+    android:paddingEnd="@dimen/end">
+
+    <TextView
+        android:id="@+id/tv_property"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@mipmap/btg_icon_arrow_normal"
+        android:drawablePadding="10dp"
+        android:text="@string/property"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size18" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/AppThemeColor"
+            android:textSize="@dimen/text_size18" />
+
+        <TextView
+            android:id="@+id/tv_possess_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/possess_money"
+            android:textColor="@color/text_color_a6a3a3"
+            android:textSize="@dimen/text_size12" />
+    </LinearLayout>
+</FrameLayout>

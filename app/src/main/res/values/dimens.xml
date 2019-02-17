@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_height">45dp</dimen>
+    <dimen name="radio_button_width">60dp</dimen>
+    <dimen name="radio_button_height">30dp</dimen>
+    <dimen name="radio_button_radius">5dp</dimen>
+
+    <dimen name="start">15dp</dimen>
+    <dimen name="end">15dp</dimen>
+
+    <dimen name="property_height">55dp</dimen>
+    <dimen name="radius">6dp</dimen>
+    <dimen name="property_check_width">235dp</dimen>
+    <dimen name="property_check_height">350dp</dimen>
+    <dimen name="property_check_item_height">45dp</dimen>
+    <dimen name="select_account_type_item_height">55dp</dimen>
+    <dimen name="account_details_group_height">55dp</dimen>
+    <dimen name="account_details_child_height">55dp</dimen>
+    <dimen name="item_record_height">55dp</dimen>
+    <dimen name="borrow_money_height">55dp</dimen>
+    <dimen name="select_bank_item_height">50dp</dimen>
+    <dimen name="borrow_money_interval_height">30dp</dimen>
+
+    <dimen name="add_account_item_height">45dp</dimen>
+    <dimen name="select_account_item_height">50dp</dimen>
+
+    <dimen name="bill_title_height">60dp</dimen>
+    <dimen name="bill_record_item_height">70dp</dimen>
+
+    <dimen name="button_bottom_height">50dp</dimen>
+
+
+    <dimen name="divider_line">1dp</dimen>
+
+    <dimen name="text_size35">35sp</dimen>
+    <dimen name="text_size34">34sp</dimen>
+    <dimen name="text_size33">33sp</dimen>
+    <dimen name="text_size32">32sp</dimen>
+    <dimen name="text_size31">31sp</dimen>
+    <dimen name="text_size30">30sp</dimen>
+    <dimen name="text_size29">29sp</dimen>
+    <dimen name="text_size27">27sp</dimen>
+    <dimen name="text_size25">25sp</dimen>
+    <dimen name="text_size20">20sp</dimen>
+    <dimen name="text_size19">19sp</dimen>
+    <dimen name="text_size18">18sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="text_size15">15sp</dimen>
+    <dimen name="text_size14">14sp</dimen>
+    <dimen name="text_size13">13sp</dimen>
+    <dimen name="text_size12">12sp</dimen>
+    <dimen name="text_size11">11sp</dimen>
+    <dimen name="text_size10">10sp</dimen>
+    <dimen name="text_size09">9sp</dimen>
+    <dimen name="text_size08">8sp</dimen>
+    <dimen name="list_item_edit_classify_height">45dp</dimen>
+    <dimen name="budget_process_height">40dp</dimen>
+    <dimen name="bill_classify_list_item_height">50dp</dimen>
+</resources>

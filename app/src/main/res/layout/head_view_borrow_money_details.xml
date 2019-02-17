@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_head"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/AppThemeColor">
+
+        <TextView
+            android:id="@+id/tv_debt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size32" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:divider="@drawable/shape_divider_vertical_line_e4e5e4"
+            android:dividerPadding="10dp"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/tv_interest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size18" />
+
+            <TextView
+                android:id="@+id/tv_all_debt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size18" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_fb"
+        android:orientation="vertical"
+
+        android:padding="@dimen/start">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/tv_name_key"
+                style="@style/key_style"
+                android:text="@string/borrow_money_out_name" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/value_style" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/tv_time_key"
+                style="@style/key_style"
+                android:text="@string/borrow_money_out_time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/value_style" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/tv_account_key"
+                style="@style/key_style"
+                android:text="@string/borrow_money_out_account" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                style="@style/value_style" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/tv_content_key"
+                style="@style/key_style"
+                android:text="@string/remark" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                style="@style/value_style" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color_dfdfde" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/divider_color_f4f6f4"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/start"
+        android:paddingEnd="@dimen/end"
+        android:text="@string/refund_history" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color_dfdfde" />
+
+    <TextView
+        android:id="@+id/tv_details_kong"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableStart="@mipmap/borrow_records_kong"
+        android:drawablePadding="15dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="@dimen/end"
+        android:text="@string/refund_history_kong"
+        android:textColor="@color/text_color_a09e9d"
+        android:textSize="@dimen/text_size14"
+        android:visibility="visible" />
+
+
+</LinearLayout>

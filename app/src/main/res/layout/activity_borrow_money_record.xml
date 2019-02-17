@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.BorrowMoneyRecordActivity">
+
+    <TextView
+
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size25" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tv_desc"
+        android:gravity="end|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size25" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_add"
+        android:layout_below="@+id/tv_money"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_borrow_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/tv_interval"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_interval_bg"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/start"
+            android:paddingEnd="@dimen/end"
+            android:textColor="@color/text_color_9e9b9b"
+            android:textSize="@dimen/text_size12" />
+
+        <include
+            layout="@layout/view_black_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_add"
+        style="@style/activity_bottom_add"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:text="@string/append_record" />
+</RelativeLayout>

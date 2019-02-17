@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.cjj.keepaccounts.utils.Utils" />
+
+        <variable
+            name="statementDetail"
+            type="com.cjj.keepaccounts.bean.StatementDetailBean" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bill_classify_list_item_height"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/start"
+        android:paddingEnd="@dimen/end">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            logoImgId="@{statementDetail.imgId}"
+            logoImgSize="@{Utils.dip2px(26)}"
+            memberColor="@{statementDetail.color}"
+            memberDesc="@{statementDetail.dsec}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:drawablePadding="@dimen/start"
+            android:gravity="center_vertical"
+            android:text="@{statementDetail.dsec}"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size15" />
+
+        <TextView
+            android:id="@+id/tv_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/start"
+            android:text="@{@string/ratio_format(statementDetail.ratio)}"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size15" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:drawablePadding="@dimen/start"
+            android:text="@{@string/format_money(statementDetail.money)}"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size15" />
+    </FrameLayout>
+</layout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cjj.keepaccounts">
+
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/DIY.SlideClose.Transparent.Theme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/main_activity_style">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.account.SelectAccountTypeActivity" />
+        <activity android:name=".activity.account.AddAccountActivity" />
+        <activity android:name=".activity.tool.EditTextActivity" />
+        <activity android:name=".activity.tool.SelectColorActivity" />
+        <activity android:name=".activity.account.AccountDetailsActivity" />
+        <activity android:name=".activity.account.BillDetailsActivity" />
+        <activity android:name=".activity.account.BorrowMoneyRecordActivity" />
+        <activity android:name=".activity.account.BorrowMoneyDetailsActivity" />
+        <activity android:name=".activity.account.ReceiptBorrowMoneyActivity" />
+        <activity android:name=".activity.account.AddBorrowMoneyActivity" />
+        <activity
+            android:name=".activity.account.SelectBankActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.bill.NewBillRecordActivity" />
+        <activity android:name=".activity.bill.EditClassifyActivity" />
+        <activity android:name=".activity.bill.EditClassifyDetailsActivity" />
+        <activity
+            android:name=".activity.tool.EditBillRecordContentActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity android:name=".activity.bill.budget.BudgetActivity" />
+        <activity android:name=".activity.bill.budget.BudgetSettingActivity" />
+        <activity android:name=".activity.bill.CalendarRecordActivity" />
+        <activity android:name=".activity.bill.CalendarSelectActivity" />
+        <activity android:name=".activity.bill.AnnualRecordActivity" />
+        <activity
+            android:name=".activity.bill.EditMemberActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.bill.ClassifyDetailsActivity" />
+        <activity android:name=".activity.statement.SettingShowClassifyActivity" />
+        <activity android:name=".activity.statement.SelectDateIntervalActivity" />
+        <activity android:name=".activity.setting.SettingActivity" />
+        <activity android:name=".activity.setting.LoginActivity" />
+        <activity android:name=".activity.bill.SearchRecordActivity" />
+        <activity android:name=".activity.bill.budget.AddBudgetChildClassifyActivity" />
+        <activity android:name=".activity.bill.budget.BudgetClassifyEditActivity" />
+        <activity android:name=".activity.bill.budget.EditChildClassifyBudgetActivity" />
+
+        <service
+            android:name=".service.SyncService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="UPA_MPA_CHANNELID"
+            android:value="45271eAnAji" />
+        <meta-data
+            android:name="UPA_MPA_APPKEY"
+            android:value="fmYzQr" />
+    </application>
+
+</manifest>

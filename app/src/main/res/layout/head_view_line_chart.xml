@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp">
+
+        <CheckBox
+            android:id="@+id/cb_income"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:background="@drawable/selector_cb_trend_income_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/income"
+            android:textColor="@color/selector_cb_trend_text_color"
+            android:textSize="@dimen/text_size15" />
+
+        <CheckBox
+            android:id="@+id/cb_expend"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_cb_trend_expend_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/expend"
+            android:textColor="@color/selector_cb_trend_text_color"
+            android:textSize="@dimen/text_size15" />
+
+        <CheckBox
+            android:id="@+id/cb_surplus"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:background="@drawable/selector_cb_trend_surplus_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/surplus"
+            android:textColor="@color/selector_cb_trend_text_color"
+            android:textSize="@dimen/text_size15" />
+
+    </FrameLayout>
+
+
+    <com.cjj.keepaccounts.view.LineChartView
+        android:id="@+id/lcv"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:paddingStart="@dimen/start"
+        android:paddingTop="25dp"
+        android:paddingEnd="@dimen/end"
+        android:paddingBottom="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/bg_color_f7">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/text_color_a09e9d"
+            android:textSize="@dimen/text_size15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/income"
+            android:textColor="@color/text_color_a09e9d"
+            android:textSize="@dimen/text_size15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/expend"
+            android:textColor="@color/text_color_a09e9d"
+            android:textSize="@dimen/text_size15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/surplus"
+            android:textColor="@color/text_color_a09e9d"
+            android:textSize="@dimen/text_size15" />
+    </LinearLayout>
+
+</LinearLayout>

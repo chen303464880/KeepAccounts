@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/select_account_item_height"
+    android:button="@null"
+    android:drawableEnd="@drawable/selector_account_check_box_drawable"
+    android:drawablePadding="@dimen/start"
+    android:lineSpacingExtra="5dp"
+    android:paddingEnd="@dimen/end"
+    android:paddingStart="@dimen/start"
+    android:textColor="@color/text_color_655f5f"
+    android:textSize="@dimen/text_size15" />

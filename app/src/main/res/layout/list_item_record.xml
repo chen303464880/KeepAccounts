@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cjj.keepaccounts.view.SlideDeleteView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/delete_view"
+    android:layout_height="@dimen/item_record_height">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_record_height"
+        android:background="@drawable/ripple_bg_click_white"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/item_record_height"
+        android:paddingStart="@dimen/start"
+        android:paddingEnd="@dimen/end">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:drawablePadding="16dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size15" />
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size15" />
+    </FrameLayout>
+</com.cjj.keepaccounts.view.SlideDeleteView>

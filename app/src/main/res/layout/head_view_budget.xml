@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/start"
+    android:paddingEnd="@dimen/end">
+
+    <TextView
+        android:id="@+id/tv_residual_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size35" />
+
+    <TextView
+        android:id="@+id/tv_budget_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_residual_budget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <ProgressBar
+        android:id="@+id/pb_budget"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/budget_process_height"
+        android:layout_below="@+id/tv_budget_desc"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/shape_progressbar_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pb_budget"
+        android:layout_marginBottom="20dp"
+        android:text="@string/have_no_money"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size12" />
+
+    <TextView
+        android:id="@+id/tv_total_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pb_budget"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/have_no_money"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size12" />
+
+</RelativeLayout>

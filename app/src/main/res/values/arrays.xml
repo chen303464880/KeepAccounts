@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="budget_mode">
+        <item>@string/month_budget</item>
+        <item>@string/week_budget</item>
+        <item>@string/day_budget</item>
+    </array>
+    <array name="surplus_budget">
+        <item>@string/surplus_month_budget</item>
+        <item>@string/surplus_week_budget</item>
+        <item>@string/surplus_day_budget</item>
+    </array>
+</resources>

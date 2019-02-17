@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="@dimen/title_height"
+            android:visibility="gone"
+            android:layout_height="@dimen/title_height"
+            android:scaleType="center"
+            android:src="@mipmap/ic_setting" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:background="@mipmap/rili"
+            android:gravity="center"
+            android:paddingStart="3dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="2dp"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="13sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_sync"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_bill_record_search_bg"
+            android:max="100"
+            android:progressDrawable="@null" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:drawableEnd="@mipmap/sanjiaojiantou_xia"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:progressDrawable="@null"
+            android:text="@string/default_accounts" />
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sbl"
+        android:layout_alignBottom="@+id/sbl"
+        android:layout_centerHorizontal="true"
+        android:background="@color/divider_color_e0dfdf"
+        tools:ignore="PxUsage" />
+
+    <com.cjj.keepaccounts.view.SpringBackLayout
+        android:id="@+id/sbl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bill_title_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_month_income"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/month_income"
+                android:textColor="@color/text_color_655f5f"
+                android:textSize="@dimen/text_size13" />
+
+            <FrameLayout
+                android:id="@+id/fl_budget"
+                android:layout_width="@dimen/bill_title_height"
+                android:layout_height="match_parent">
+
+                <com.cjj.keepaccounts.view.WaveView
+                    android:id="@+id/wv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_budget_mode"
+                        android:layout_width="@dimen/bill_title_height"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/month_budget"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size10" />
+
+                    <TextView
+                        android:id="@+id/tv_budget"
+                        android:layout_width="@dimen/bill_title_height"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size12" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tv_month_expend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/month_expend"
+                android:textColor="@color/text_color_655f5f"
+                android:textSize="@dimen/text_size13" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bill_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp" />
+    </com.cjj.keepaccounts.view.SpringBackLayout>
+
+    <ViewStub
+        android:id="@+id/vs_blank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frameLayout"
+        android:inflatedId="@+id/tv_bill_record_blank"
+        android:layout="@layout/view_bill_record_blank" />
+
+</RelativeLayout>

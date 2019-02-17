@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_details_kong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="15dp"
+        android:drawableTop="@mipmap/account_records_detail_kong"
+        android:text="@string/details_kong"
+        android:textColor="@color/text_color_a19e9d"
+        android:textSize="@dimen/text_size16" />
+
+</FrameLayout>

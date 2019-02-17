@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ExpandableListView
+        android:id="@+id/elv_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/button_bottom_height"
+        android:childDivider="@color/divider_color_dfdfde"
+        android:divider="@color/divider_color_e4e5e4"
+        android:dividerHeight="1px"
+        android:groupIndicator="@drawable/selector_expandable_indicator"
+        android:indicatorStart="@dimen/start"
+        android:indicatorEnd="25dp"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        style="@style/activity_bottom_add"
+        android:layout_gravity="bottom"
+        android:text="@string/append_record" />
+</FrameLayout>

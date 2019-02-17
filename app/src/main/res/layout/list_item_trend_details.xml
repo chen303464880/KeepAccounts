@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="trendDetails"
+            type="com.cjj.keepaccounts.bean.TrendDetailsBean" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@{@string/format_money(trendDetails.monthRecordInfo.income)}"
+            android:textColor="@{trendDetails.monthRecordInfo.income!=0?@color/text_color_655f5f:@color/text_color_a39f9f}"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/tv_expend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@{@string/format_money(trendDetails.monthRecordInfo.expend)}"
+            android:textColor="@{trendDetails.monthRecordInfo.expend!=0?@color/text_color_655f5f:@color/text_color_a39f9f}"
+            android:textSize="@dimen/text_size14" />
+
+        <TextView
+            android:id="@+id/tv_surplus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@{@string/format_money(trendDetails.surplus)}"
+            android:textColor="@{trendDetails.surplus!=0?@color/text_color_ff6b6b:@color/text_color_a39f9f}" />
+
+    </LinearLayout>
+</layout>

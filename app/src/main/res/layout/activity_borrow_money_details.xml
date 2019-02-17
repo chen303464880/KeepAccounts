@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_borrow_money"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_bottom_while_e7_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_collect_money"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@color/white"
+        android:paddingStart="@dimen/start"
+        android:paddingEnd="@dimen/start">
+
+        <TextView
+            android:id="@+id/tv_collect_money"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/collect_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size18" />
+
+    </LinearLayout>
+</LinearLayout>

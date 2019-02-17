@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.tool.SelectColorActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/property_height"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/start"
+            android:background="@drawable/shape_property_content_logo_bg"
+            android:contentDescription="@null"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/iv_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/iv_logo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size16" />
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/end"
+            android:layout_toEndOf="@+id/iv_account_name"
+            android:gravity="end"
+            android:text="@string/have_no_money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size15" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/shape_divider_horizontal_line_e4e5e4" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_select_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/end"
+        android:layout_marginStart="@dimen/start"
+        android:layout_marginTop="15dp"
+        android:overScrollMode="never" />
+</android.support.v7.widget.LinearLayoutCompat>

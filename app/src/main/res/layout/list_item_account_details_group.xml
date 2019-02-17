@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/account_details_group_height"
+    android:background="@drawable/ripple_bg_click_fb"
+    android:maxHeight="@dimen/account_details_group_height"
+    android:minHeight="@dimen/account_details_group_height"
+    android:paddingStart="38dp"
+    android:paddingEnd="@dimen/end">
+
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:lineSpacingExtra="1dp"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size15" />
+
+
+    <TextView
+        android:id="@+id/tv_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_gravity="center_vertical|end"
+        android:lineSpacingExtra="1dp"
+        android:textColor="@color/text_color_a6a3a3"
+        android:textSize="@dimen/text_size13" />
+
+</FrameLayout>

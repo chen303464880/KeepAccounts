@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_add_account"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/property_height"
+    android:background="@drawable/shape_property_head_footer_bg"
+    android:drawableStart="@mipmap/tianjia"
+    android:drawablePadding="10dp"
+    android:gravity="center_vertical"
+    android:paddingStart="@dimen/start"
+    android:paddingEnd="@dimen/end"
+    android:text="@string/add_account"
+    android:textColor="@color/text_color_a6a3a3"
+    android:textSize="@dimen/text_size18">
+
+</TextView>

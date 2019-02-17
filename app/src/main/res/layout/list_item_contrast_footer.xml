@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_add_account"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/property_height"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/shape_contrast_footer_bg"
+    android:drawableStart="@mipmap/tianjia"
+    android:drawablePadding="10dp"
+    android:gravity="center_vertical"
+    android:paddingStart="120dp"
+    android:paddingEnd="0dp"
+    android:text="@string/add_show_classify"
+    android:textColor="@color/text_color_a6a3a3"
+    android:textSize="@dimen/text_size18">
+
+</TextView>

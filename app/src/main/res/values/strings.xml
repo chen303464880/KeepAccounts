@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">KeepAccounts</string>
+    <!--suppress CheckTagEmptyBody -->
+    <string name="null_str"></string>
+    <string name="property">资产</string>
+    <string name="statement">报表</string>
+    <string name="bill">账单</string>
+    <string name="liabilities">负债</string>
+    <string name="account">账户</string>
+    <string name="use_account">使用账户</string>
+    <string name="back">返回</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="settings">设置</string>
+    <string name="details">详情</string>
+    <string name="time">时间</string>
+    <string name="delete">删除</string>
+    <string name="accomplish">完成</string>
+
+    <string name="format_money">%.2f</string>
+    <string name="xxx_balance">%s余额</string>
+    <string name="balance_xxx">剩余额度：%.2f</string>
+    <string name="balance">剩余额度</string>
+    <string name="hello_blank_fragment">Hello blank fragmentList</string>
+    <string name="classify">分类</string>
+    <string name="member">成员</string>
+    <string name="trend">趋势</string>
+    <string name="contrast">对比</string>
+    <string name="possess_money">净资产%.2f</string>
+    <string name="add_account">添加账户</string>
+    <string name="property_check">选择计入%s的账户</string>
+    <string name="select_account_type">选择账户类型</string>
+
+    <string name="add_account_type">新建%s账户</string>
+    <string name="new_account">新建账户</string>
+    <string name="new_text">新建</string>
+    <string name="account_name">账户名称</string>
+    <string name="issuing_bank">发卡行</string>
+    <string name="extend_credit">欠款额度</string>
+    <string name="present_credit">剩余额度</string>
+    <string name="account_type">账户类型</string>
+    <string name="money">金额</string>
+    <string name="accountant_bill_date">账单日</string>
+    <string name="due_date">还款日</string>
+    <string name="select_account_color">选择账户颜色</string>
+    <string name="debt">欠款</string>
+    <string name="present_debt">当前欠款</string>
+    <string name="account_balance">账户余额</string>
+    <string name="year">年</string>
+    <string name="bank_income">流入</string>
+    <string name="expenditure">流出</string>
+    <string name="income_num">流入：%.2f</string>
+    <string name="expenditure_num">流出：%.2f</string>
+    <string name="have_no_money">0.00</string>
+
+    <string name="yyyy_MM_dd">%1$d年%2$02d月%3$02d日</string>
+    <string name="yyyy_MM_dd_format">yyyy年MM月dd日</string>
+    <string name="yyyy_MM">%1$d年%2$02d月</string>
+    <string name="MM_dd">%1$02d月%2$02d日</string>
+
+    <string name="xx_month">%d月</string>
+    <string name="xx_day">%d日</string>
+    <string name="xx_year">%d年</string>
+    <string name="end_a_month">月末</string>
+    <string name="date_interval">%1$02d.%2$02d&#8211;%3$02d.%4$02d</string>
+    <string name="the_current_bill">本期账单</string>
+    <string name="account_book">账本</string>
+
+    <string name="no_member">无成员</string>
+    <string name="edit">编辑</string>
+    <string name="default_account_book">默认账本</string>
+    <string name="income_account">转入账户</string>
+    <string name="expenditure_account">转出账户</string>
+
+    <string name="append_record">添加记录</string>
+    <string name="borrow_money_total">借入总额</string>
+    <string name="loans_total">借出总额</string>
+    <string name="loans">借出</string>
+    <string name="borrow">借入</string>
+    <string name="details_kong">暂无流水数据</string>
+    <string name="all">全部</string>
+
+    <string name="income">收入</string>
+    <string name="expend">支出</string>
+    <string name="total_income">总收入</string>
+    <string name="total_expend">总支出</string>
+    <string name="xx_debt">%.2f\n剩余欠款</string>
+    <string name="xx_interest_in">%.2f\n利息收入</string>
+    <string name="xx_interest_out">%.2f\n利息支出</string>
+    <string name="interest_in">利息收入</string>
+    <string name="interest_out">利息支出</string>
+    <string name="xx_all_debt">%.2f\n总借款</string>
+    <string name="refund_history">还款记录</string>
+    <string name="refund_history_kong">暂无还款数据</string>
+
+    <string name="remark">备 注</string>
+    <string name="borrow_money_out_account">借出账户</string>
+    <string name="borrow_money_out_time">借出时间</string>
+    <string name="borrow_money_out_name">借款给谁</string>
+    <string name="borrow_money_in_account">借入账户</string>
+    <string name="borrow_money_in_time">借入时间</string>
+    <string name="borrow_money_in_name">向谁借款</string>
+    <string name="collect_money">收款</string>
+    <string name="refund_money">还款</string>
+    <string name="remarks">备注</string>
+    <string name="select_account">选择账户</string>
+    <string name="edit_money">编辑金额</string>
+
+    <string name="his_name">对方名称</string>
+    <string name="loans_money">借出金额</string>
+    <string name="borrow_money">借入金额</string>
+    <string name="repayment_time">还款时间</string>
+    <string name="edit_name">编辑名称</string>
+
+    <string name="month_income">%1$d月收入\n%2$.2f</string>
+    <string name="month_expend">%1$d月支出\n%2$.2f</string>
+    <string name="month_budget_xx">月预算\n%.2f</string>
+    <string name="transfer_accounts">转账</string>
+    <string name="edit_classify">编辑分类</string>
+    <string name="edit_income_classify">编辑收入分类</string>
+    <string name="edit_expend_classify">编辑支入分类</string>
+    <string name="edit_category">修改类别</string>
+    <string name="new_category">添加类别</string>
+    <string name="new_income_category">添加收入类别</string>
+    <string name="new_expend_category">添加支出类别</string>
+    <string name="edit_income_category">编辑收入类别</string>
+    <string name="edit_expend_category">编辑支入类别</string>
+    <string name="add">添加</string>
+    <string name="input_classify_name">自定义输入名称</string>
+
+    <string name="input_content">输入备注</string>
+    <string name="budget">预算</string>
+    <string name="budget_setting">预算设置</string>
+    <string name="open_budget">开启预算</string>
+    <string name="month_budget">月预算</string>
+    <string name="week_budget">周预算</string>
+    <string name="day_budget">日预算</string>
+    <string name="surplus_month_budget">本月剩余预算</string>
+    <string name="surplus_week_budget">本周剩余预算</string>
+    <string name="surplus_day_budget">本日剩余预算</string>
+    <string name="budget_mode">预算主页展示</string>
+    <string name="sunday">日</string>
+    <string name="monday">一</string>
+    <string name="tuesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="beyond_budget_hint">超过日预算</string>
+    <string name="not_beyond_budget_hint">未超过日预算</string>
+
+    <string name="calendar">日历</string>
+    <string name="select_member">选择成员</string>
+    <string name="new_member">新建成员</string>
+    <string name="member_setting">成员管理</string>
+    <string name="select_bank">选择发卡行</string>
+    <string name="black_record_hint">%1$d年%2$2d月%3$2d日无记账记录</string>
+
+
+    <string name="ratio_format">%.1f%%</string>
+
+    <string name="year_time_interval">%1$d年%2$02d月%3$02d日~%4$d年%5$02d月%6$02d日</string>
+    <string name="month_time_interval">%1$d年%2$02d月%3$02d日~%4$02d月%5$02d日</string>
+    <string name="day_time_interval">%1$2d月%2$02d日~%3$02d日</string>
+
+    <string name="xx_classify_details">%s明细</string>
+
+    <string name="total">合计</string>
+
+
+    <string name="month_expend_count">%d笔\n累计消费笔数</string>
+    <string name="month_expend_money">%.2f\n累计消费金额</string>
+    <string name="month_average_money">%.2f\n月均消费</string>
+
+    <string name="add_show_classify">添加展示分类</string>
+
+    <string name="month">月份</string>
+    <string name="surplus">结余</string>
+    <string name="this_year">本年</string>
+    <string name="this_month">本月</string>
+    <string name="this_week">本周</string>
+    <string name="start_date">开始时间</string>
+    <string name="end_date">结束时间</string>
+    <string name="select_date">选择时间</string>
+    <string name="xx_income">%.2f 收入</string>
+    <string name="expend_xx">支出 %.2f</string>
+    <string name="income_xx">收入 %.2f</string>
+    <string name="Immediately_login">立即登陆</string>
+    <string name="Immediately_login_hint">登陆后可备份数据</string>
+    <string name="username_hint">用户名/邮箱/手机号</string>
+    <string name="password">密码</string>
+
+    <string name="search_result">搜索结果</string>
+    <string name="default_accounts">默认账本</string>
+    <string name="click_setting_month_budget">点击设置月预算</string>
+    <string name="month_budget_">月预算%.2f</string>
+    <string name="surplus_">剩余</string>
+    <string name="overspend">超支</string>
+    <string name="add_budget_child_classify">添加子分类</string>
+    <string name="type_name">分类名称</string>
+    <string name="month_budget_money">月预算金额</string>
+    <string name="type_budget">%s预算</string>
+    <string name="delete_record_hint">删除记录提示</string>
+    <string name="delete_record_affirm_hint">你确定要删除这条记录吗?</string>
+
+
+</resources>

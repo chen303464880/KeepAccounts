@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="6dp"
+    android:maxHeight="@dimen/property_check_height">
+
+    <View
+        android:id="@+id/view_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/start"
+        android:background="@color/white"
+        android:contentDescription="@null"
+        android:elevation="6dp"
+        android:rotation="45" />
+
+
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/start"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/end"
+        android:layout_marginBottom="@dimen/end"
+        android:background="@drawable/shape_pop_radio_bg"
+        android:elevation="6dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="@dimen/property_check_width"
+                android:layout_height="@dimen/property_check_item_height"
+                android:elevation="6dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingStart="@dimen/start"
+                android:paddingEnd="@dimen/end"
+                android:textColor="@color/AppThemeColor"
+                android:textSize="@dimen/text_size16" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/shape_divider_horizontal_line_e4e5e4"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

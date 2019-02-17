@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <RadioGroup
+        android:id="@+id/rg_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_bg_top_while_line"
+        android:baselineAligned="false"
+        android:checkedButton="@+id/rb_property"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_property"
+            style="@style/main_rb_style"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/selector_rb_property_drawable"
+            android:text="@string/property" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_bill"
+            style="@style/main_rb_style"
+            android:background="@color/transparent"
+            android:drawableTop="@mipmap/jiyibi"
+            android:gravity="center"
+            android:textColor="@color/selector_rb_text_color" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_statement"
+            style="@style/main_rb_style"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/selector_rb_statement_drawable"
+            android:text="@string/statement" />
+    </RadioGroup>
+</LinearLayout>

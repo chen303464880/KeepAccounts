@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="accountType"
+            type="com.cjj.keepaccounts.bean.AccountType" />
+
+        <variable
+            name="account"
+            type="com.cjj.keepaccounts.bean.Account" />
+
+        <variable
+            name="bankInfo"
+            type="com.cjj.keepaccounts.bean.BankInfoBean" />
+
+        <variable
+            name="isEdit"
+            type="boolean" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/shape_divider_horizontal_line_e4e5e4"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle"
+        tools:context=".activity.account.AddAccountActivity">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/divider_color_f4f6f4" />
+
+        <FrameLayout
+            android:id="@+id/fl_issuing_bank"
+            style="@style/add_account_item_layout_style"
+            android:visibility="@{(accountType.indexNum==2||accountType.indexNum==3)?View.VISIBLE :View.GONE}">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/issuing_bank" />
+
+            <TextView
+                android:id="@+id/tv_issuing_bank"
+                style="@style/add_account_item_value_style"
+                android:drawableEnd="@mipmap/youjiantou_zhanwei"
+                android:text="@{account.bankName}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_account_name"
+            style="@style/add_account_item_layout_style">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/account_name" />
+
+            <TextView
+                android:id="@+id/tv_account_name"
+                style="@style/add_account_item_value_style"
+                android:layout_height="wrap_content"
+                android:text="@{account.name}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_account_type"
+            style="@style/add_account_item_layout_style"
+            android:visibility="@{isEdit?View.VISIBLE :View.GONE}">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/account_type" />
+
+            <TextView
+                android:id="@+id/tv_account_type"
+                style="@style/add_account_item_value_style"
+                android:drawableEnd="@mipmap/youjiantou_zhanwei"
+                android:text="@{accountType.name}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_extend_credit"
+            style="@style/add_account_item_layout_style"
+            android:visibility="@{(accountType.indexNum==3||accountType.indexNum==10 ||accountType.indexNum==11 )?View.VISIBLE :View.GONE}">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/extend_credit" />
+
+            <TextView
+                android:id="@+id/tv_extend_credit"
+                style="@style/add_account_item_value_style"
+                android:text="@{@string/format_money(account.creditLimit+0F)}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_money"
+            style="@style/add_account_item_layout_style"
+            android:visibility="@{(accountType.indexNum==12 ||accountType.indexNum==13)?View.GONE :View.VISIBLE}">
+
+            <TextView
+                android:id="@+id/tv_money_desc"
+                style="@style/add_account_item_name_style"
+                android:text="@{(accountType.indexNum==3||accountType.indexNum==10 ||accountType.indexNum==11 )?@string/debt :@string/money}" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/add_account_item_value_style"
+                android:text="@{@string/format_money((accountType.indexNum==3||accountType.indexNum==10 ||accountType.indexNum==11 )?-account.money+0.0 : account.money)}" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_accountant_bill_date"
+            style="@style/add_account_item_layout_style"
+            android:visibility="@{(accountType.indexNum==3 ||accountType.indexNum==10 ||accountType.indexNum==11)?View.VISIBLE :View.GONE}">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/accountant_bill_date" />
+
+            <TextView
+                android:id="@+id/tv_accountant_bill_date"
+                style="@style/add_account_item_value_style" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_due_date"
+            style="@style/add_account_item_layout_style"
+            android:visibility="@{(accountType.indexNum==3 ||accountType.indexNum==10 ||accountType.indexNum==11)?View.VISIBLE :View.GONE}">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/due_date" />
+
+            <TextView
+                android:id="@+id/tv_due_date"
+                style="@style/add_account_item_value_style" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_select_account_color"
+            style="@style/add_account_item_layout_style">
+
+            <TextView
+                style="@style/add_account_item_name_style"
+                android:text="@string/select_account_color" />
+
+            <TextView
+                android:id="@+id/tv_select_account_color"
+                style="@style/add_account_item_value_style"
+                android:drawablePadding="5dp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+    </LinearLayout>
+</layout>

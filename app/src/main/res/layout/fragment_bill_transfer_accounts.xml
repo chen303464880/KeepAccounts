@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_ebeceb">
+
+    <FrameLayout
+        android:id="@+id/fl_expend_account"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="@dimen/start"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="@dimen/end">
+
+        <TextView
+            android:id="@+id/tv_expend_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start"
+            android:layout_gravity="center_vertical|start"
+            android:text="@string/expenditure_account"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_expend_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/end"
+            android:layout_gravity="center_vertical|end"
+            android:text="@string/have_no_money"
+            android:textColor="@color/text_color_a39f9f"
+            android:textSize="@dimen/text_size16" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_income_account"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="@dimen/start"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/end"
+        android:layout_below="@+id/fl_expend_account">
+
+        <TextView
+            android:id="@+id/tv_income_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/start"
+            android:layout_gravity="center_vertical|start"
+            android:text="@string/income_account"
+            android:textColor="@color/text_color_655f5f"
+            android:textSize="@dimen/text_size16" />
+
+        <TextView
+            android:id="@+id/tv_income_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/end"
+            android:layout_gravity="center_vertical|end"
+            android:text="@string/have_no_money"
+            android:textColor="@color/text_color_a39f9f"
+            android:textSize="@dimen/text_size16" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/start"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/end"
+        android:layout_marginBottom="-30dp"
+        android:layout_alignBottom="@+id/fl_expend_account"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/image_shape_transfer_account_arrows" />
+
+</RelativeLayout>

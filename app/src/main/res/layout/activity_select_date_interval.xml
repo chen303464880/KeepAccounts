@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <RadioGroup
+        android:id="@+id/rg_date_interval"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/start"
+        android:paddingEnd="@dimen/end">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_select_date_interval_left"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/this_week"
+            android:textColor="@color/selector_cb_select_date_interval_text_color"
+            android:textSize="@dimen/text_size15" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_select_date_interval_middle"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/this_month"
+            android:textColor="@color/selector_cb_select_date_interval_text_color"
+            android:textSize="@dimen/text_size15" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_select_date_interval_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/this_year"
+            android:textColor="@color/selector_cb_select_date_interval_text_color"
+            android:textSize="@dimen/text_size15" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/start_date"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size18" />
+
+    <DatePicker
+        android:id="@+id/dp_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/end_date"
+        android:textColor="@color/text_color_655f5f"
+        android:textSize="@dimen/text_size18" />
+
+    <DatePicker
+        android:id="@+id/dp_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+</LinearLayout>

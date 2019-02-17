@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.property.PropertyFragment">
+
+    <RadioGroup
+        android:id="@+id/rg_property"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="center"
+        android:checkedButton="@id/rb_possess"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_possess"
+            style="@style/radio_button_style"
+            android:background="@drawable/selector_radio_button_left"
+            android:text="@string/property" />
+
+        <RadioButton
+            android:id="@+id/rb_liabilities"
+            android:text="@string/liabilities"
+            android:background="@drawable/selector_radio_button_right"
+            style="@style/radio_button_style" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color_e0" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_property"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
